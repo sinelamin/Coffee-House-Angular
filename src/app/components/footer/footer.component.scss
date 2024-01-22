@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  margin-bottom: 40px;
+  color: $textLight;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background-color: $bgBackdrop;
+    border: 1px solid $borderLight;
+    border-radius: 40px;
+  }
+
+  .footer-content {
+    max-width: 37.4%;
+    margin-right: 100px;
+  }
+
+  .footer-content__title {
+    margin: 0 0 40px;
+    font-size: 60px;
+    line-height: 125%;
+  }
+
+  .footer-content__accent {
+    font-style: italic;
+    color: $textAccent;
+  }
+
+  .footer-social__link {
+    margin-right: 12px;
+  }
+
+  .footer-contacts__title {
+    margin: 0 0 40px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  .contact-list {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .contact-list__item {
+    margin: 0 0 16px;
+  }
+
+  .contact-item__icon {
+    margin-right: 8px;
+  }
+
+  .contact-item__address {
+    display: inline;
+  }
+}

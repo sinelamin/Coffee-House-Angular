@@ -1,72 +1,73 @@
 @import "../../../styles/variables.scss";
 
-
-.application-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.application {
+  margin-bottom: 100px;
+  
+  .application-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .application-download {
+    max-width: 630px;
+  }
+  
+  .application-title {
+    margin: 0 0 40px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    color: $textDark;
+  }
+  
+  .application-title__accent {
+    font-style: italic;
+    color: $textAccent;
+  }
+  
+  .application-descr {
+    margin: 0 0 40px;
+    font-size: 16px;
+    line-height: 150%;
+    color: $textDark;
+  }
+  
+  .application-links {
+    display: flex;
+  }
+  
+  .application-link {
+    margin-right: 20px;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: 1px solid $borderDark;
+  }
+  
+  .link-content {
+    display: flex;
+    align-items: center;
+    width: 180px;
+  }
+  
+  .application-link__img {
+    margin-right: 8px;
+  }
+  
+  .application-link__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  
+  .application-link__subname {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  
+  .application-photo {
+    max-width: 50%;
+  }
 }
-
-.application-download {
-  max-width: 630px;
-}
-
-.application-title {
-  margin: 0 0 40px;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 125%;
-  color: $textDark;
-}
-
-.application-title__accent {
-  font-style: italic;
-  color: $textAccent;
-}
-
-.application-descr {
-  margin: 0 0 40px;
-  font-size: 16px;
-  line-height: 150%;
-  color: $textDark;
-}
-
-.application-links {
-  display: flex;
-}
-
-.application-link {
-  margin-right: 20px;
-  padding: 0 20px;
-  border-radius: 100px;
-  border: 1px solid $borderDark;
-}
-
-.link-content {
-  display: flex;
-  align-items: center;
-  width: 180px;
-}
-
-.application-link__img {
-  margin-right: 8px;
-}
-
-.application-link__name {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%;
-}
-
-.application-link__subname {
-  display: block;
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 140%;
-}
-
-.application-photo {
-  max-width: 50%;
-}
-
-.application-photo__img {}

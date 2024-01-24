@@ -16,12 +16,4 @@
   .favorite-title__accent {
     color: $textAccent;
   }
-
-  .slider-item__price {
-    margin: 0;
-  }
-
-  .slider-item__price::before {
-    content: '$';
-  }
 }

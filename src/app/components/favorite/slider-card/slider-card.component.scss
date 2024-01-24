@@ -1,0 +1,37 @@
+@import "../../../../styles/variables.scss";
+
+.slider-item {
+  margin: 0 auto;
+  width: 480px;
+  color: $textDark;
+  border: 1px solid #000;
+
+  .slider-item__img {
+    margin-bottom: 20px;
+  }
+  
+  .slider-item__name {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+  
+  .slider-item__descr {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  
+  .slider-item__price {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  .slider-item__price::before {
+    content: '$';
+  }
+}

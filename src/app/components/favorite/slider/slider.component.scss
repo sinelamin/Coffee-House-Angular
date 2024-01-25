@@ -1,0 +1,52 @@
+@import "../../../../styles/variables.scss";
+
+.slider {
+  .slider-box {
+    position: relative;
+  }
+
+  .slider-wrapper {
+    overflow: hidden;
+    margin: 0 auto 40px;
+    width: 480px;
+  }
+
+  .slider-btn {
+    position: absolute;
+    transform: translateY(-30px);
+    top: 50%;
+  }
+
+  .arrow-left {
+    left: 0;
+  }
+
+  .arrow-right {
+    right: 0;
+  }
+
+  .slider-progressbar {
+    margin: 0 auto;
+    max-width: 150px;
+  }
+
+  .progressbar-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progressbar-item {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: $borderLight;
+  }
+
+  // .progressbar-item:first-child >
+  .progressbar-item__progress {
+    width: 0;
+    height: 100%;
+    border-radius: 100px;
+    background-color: $borderDark;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="slider">
+  <div class="slider-box">
+    <div class="slider-wrapper">
+      <app-slider-list [anyValue]="position"></app-slider-list>
+    </div>
+
+    <button (click)="moveLeft()" class="slider-btn arrow-left">
+      <img class="slider-btn__img" src="./assets/img/slider-btn-left.png" alt="">
+    </button>
+    <button (click)="moveRight()" class="slider-btn arrow-right">
+      <img class="slider-btn__img" src="./assets/img/slider-btn-right.png" alt="">
+    </button>
+
+    <div class="slider-progressbar">
+      <div class="progressbar-list">
+        <div class="progressbar-item">
+          <div #progress class="progressbar-item__progress"></div>
+        </div>
+        <div class="progressbar-item">
+          <div #progress class="progressbar-item__progress"></div>
+        </div>
+        <div class="progressbar-item">
+          <div #progress class="progressbar-item__progress"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

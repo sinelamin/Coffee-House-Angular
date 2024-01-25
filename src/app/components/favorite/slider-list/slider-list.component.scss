@@ -3,5 +3,5 @@
 
 .slider-list {
   display: flex;
-  // transform: translateX(-250px);
+  transition: transform .7s;
 }

@@ -42,9 +42,9 @@
     background-color: $borderLight;
   }
 
-  .progressbar-item:first-child >
+  // .progressbar-item:first-child >
   .progressbar-item__progress {
-    width: 100%;
+    width: 0;
     height: 100%;
     border-radius: 100px;
     background-color: $borderDark;

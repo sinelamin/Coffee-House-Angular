@@ -9,5 +9,4 @@ import { HeaderOfferComponent } from './header-offer/header-offer.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
 }

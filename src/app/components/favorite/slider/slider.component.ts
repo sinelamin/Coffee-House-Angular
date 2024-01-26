@@ -72,7 +72,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.progress += 1;
       this.growthOfProgress();
-    }, 20);
+    }, 80);
 
     this.getProgressBarWidth();
 

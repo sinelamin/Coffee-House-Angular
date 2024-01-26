@@ -15,7 +15,7 @@ import dataSlider from '../../../../assets/data/dataSlider.json';
 export class SliderListComponent implements OnChanges {
   dataSliderCards = dataSlider.coffee;
 
-  @Input() anyValue: any;
+  @Input() translateValue: any;
 
   ngOnChanges(changes: SimpleChanges) {
     for (const inputName in changes) {

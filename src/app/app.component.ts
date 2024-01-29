@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 import { HeaderComponent } from './components/header/header.component';
-import { FavoriteComponent } from './components/favorite/favorite.component';
-import { AboutComponent } from './components/about/about.component';
-import { ApplicationComponent } from './components/application/application.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
@@ -15,10 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    FavoriteComponent,
-    AboutComponent,
-    ApplicationComponent,
-    FooterComponent,
+    HomeComponent,
+    MenuPageComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

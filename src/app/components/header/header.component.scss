@@ -1,8 +1,6 @@
 @import "../../../styles/variables.scss";
 
 .header {
-  margin-bottom: 100px;
-
   .header-top {
     display: flex;
     justify-content: space-between;
@@ -31,4 +29,5 @@
     font-weight: 600;
     color: $textDark;
   }
+
 }

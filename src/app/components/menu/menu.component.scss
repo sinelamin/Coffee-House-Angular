@@ -38,6 +38,7 @@
     color: $textDark;
     border-radius: 100px;
     border: 1px solid $borderLight;
+    cursor: pointer;
   }
 
   .categories-item__img {
@@ -51,6 +52,13 @@
 
   .categories-item__text {
     margin: 0;
+  }
+
+  .categories-item {
+    transition: background-color .7s;
+  }
+  .categories-item__img {
+    transition: background-color .7s;
   }
 
   .categories-item--active {

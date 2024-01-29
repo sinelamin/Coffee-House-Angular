@@ -9,16 +9,24 @@
 
     <div class="menu-categories">
       <ul class="categories-list">
-        <li class="categories-list__item categories-item categories-item--active">
+        <li #categories_list
+        (click)="getCategories($event); changeActiveCategories();" 
+        data-categories="coffee" class="categories-list__item categories-item categories-item--active">
           <img class="categories-item__img categories-item__img--active" src="./assets/img/categories-coffeee-icon.png"
             alt="coffeee-icon">
           <p class="categories-item__text">Coffee</p>
         </li>
-        <li class="categories-list__item categories-item">
+        <li #categories_list
+        (click)="getCategories($event); changeActiveCategories();"
+        data-categories="tea"
+        class="categories-list__item categories-item">
           <img class="categories-item__img" src="./assets/img/categories-tea-icon.png" alt="tea-icon">
           <p class="categories-item__text">Tea</p>
         </li>
-        <li class="categories-list__item categories-item">
+        <li #categories_list
+        (click)="getCategories($event); changeActiveCategories();"
+        data-categories="dessert"
+        class="categories-list__item categories-item">
           <img class="categories-item__img" src="./assets/img/categories-dessert-icon.png" alt="dessert-icon">
           <p class="categories-item__text">Dessert</p>
         </li>
@@ -26,81 +34,9 @@
     </div>
 
     <div class="menu-cards">
-      @for (item of dataMenuCards; track item) {
-        <app-coffee-cards [cardValue]="item"></app-coffee-cards>
-      }
-
-      <!-- <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-      
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div>
-
-      <div class="menu-card">
-        <img class="menu-card__img" src="./assets/img/coffee-1.jpg" alt="">
-        <h4 class="menu-card__title">Irish coffee</h4>
-        <p class="menu-card-description">
-          Fragrant black coffee with Jameson Irish whiskey and whipped milk
-        </p>
-        <p class="menu-card__price">7.00</p>
-      </div> -->
+      @for (item of getDataOfCards(categories); track item) {
+        <app-menu-cards [cardValue]="item"></app-menu-cards>
+        }
     </div>
   </div>
 </section>

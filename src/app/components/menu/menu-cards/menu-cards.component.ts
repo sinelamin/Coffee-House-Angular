@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-coffee-cards',
+  selector: 'app-menu-cards',
   standalone: true,
   imports: [],
-  templateUrl: './coffee-cards.component.html',
-  styleUrl: './coffee-cards.component.scss'
+  templateUrl: './menu-cards.component.html',
+  styleUrl: './menu-cards.component.scss'
 })
 export class CoffeeCardsComponent {
   @Input() cardValue: any;

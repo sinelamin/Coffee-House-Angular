@@ -1,13 +1,13 @@
-@import "../../../../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
-.header-offer {
+.offer {
+  margin-bottom: 100px;
   padding: 100px;
   border-radius: 40px;
   background-image: $headerOfferBg;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 
   .offer-content {
     max-width: 530px;

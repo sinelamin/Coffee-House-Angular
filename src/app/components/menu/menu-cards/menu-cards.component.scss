@@ -6,13 +6,39 @@
   border-radius: 40px;
   border: 1px solid $borderLight;
   color: $textDark;
+  cursor: pointer;
 }
+
+// .menu-card__img {
+//   display: block;
+//   margin-bottom: 20px;
+//   width: 100%;
+//   border-radius: 40px;
+//   object-fit: cover;
+//   object-position: center;
+//   // transform: translateZ();
+// }
 
 .menu-card__img {
   margin-bottom: 20px;
-  width: 100%;
   border-radius: 40px;
-  object-fit: contain;
+  width: 310px;
+  height: 310px;
+  // background-image: url('../../../../assets/img/coffee-1.jpg');
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+}
+
+// .qqq:hover {
+// }
+
+.menu-card:hover>.menu-card__img {
+  background-size: 100%;
+  // transform: translateZ(120%);
+  // transform: scale(.9);
+  // width: 90%;
 }
 
 .menu-card__info {

@@ -1,5 +1,6 @@
-<div class="menu-card">
-  <div class="menu-card__img" [style.backgroundImage]="'url(' + cardValue.img + ')'">
+<div #menu_card (click)="click()" (click)="someMethod()" class="menu-card">
+  <div class="menu-card__img"
+  [style.backgroundImage]="'url(' + cardValue.img + ')'">
   </div>
   <div class="menu-card__info">
     <div class="menu-card__text">

@@ -1,14 +1,17 @@
-import { Component, AfterViewInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChildren, QueryList, ElementRef, ViewChild } from '@angular/core';
+
 import dataMenu from './../../../assets/data/dataMenu.json'
 import { MuneType } from '../../models/menu.model';
 
 import { CoffeeCardsComponent } from './menu-cards/menu-cards.component';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
-    CoffeeCardsComponent
+    CoffeeCardsComponent,
+    ModalComponent
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
@@ -17,9 +20,14 @@ export class MenuComponent implements AfterViewInit {
 
   @ViewChildren('categories_list') categoriesList!: QueryList<ElementRef>;
 
-  categories = 'coffee';
+  @ViewChildren('menu_card') cardsList!: QueryList<ElementRef>;
 
+  @ViewChild('menu') munuSection!: ElementRef;
+
+  categories = 'coffee';
   arrCategoriesList: ElementRef[] = [];
+  arrCardsList: ElementRef[] = [];
+  modalShow = false;
 
   dataMenuCoffee: MuneType = dataMenu.coffee;
   dataMenuTea: MuneType = dataMenu.tea;
@@ -27,6 +35,9 @@ export class MenuComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.arrCategoriesList = this.categoriesList.toArray();
+    this.arrCardsList = this.cardsList.toArray();
+
+    console.log('arrCardsList', this.cardsList.toArray());
   }
 
   getCategories(event: MouseEvent) {
@@ -70,7 +81,6 @@ export class MenuComponent implements AfterViewInit {
     })
   }
 
-
   addActiveForCategories(elem: HTMLLIElement) {
     if (!elem.classList.contains('categories-item--active')) {
       elem.classList.add('categories-item--active');
@@ -82,4 +92,16 @@ export class MenuComponent implements AfterViewInit {
       elem.classList.remove('categories-item--active');
     }
   }
+
+  dataForChildB: any;
+
+  onClick() {
+    this.modalShow = !this.modalShow;
+  }
+
+  handleDataChanged(data: any) {
+    this.dataForChildB = data;
+    // Теперь dataForChildB будет передан дочернему компоненту B
+  }
+
 }

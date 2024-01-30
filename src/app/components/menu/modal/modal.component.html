@@ -1,0 +1,70 @@
+<div class="modal">
+  <img class="modal-img" [src]="data?.img" alt="image">
+  <div class="modal-content">
+    <h3 class="modal-title">{{data?.name}}</h3>
+    <p class="modal-description">
+      {{data?.description}}
+    </p>
+    <div class="modal-size">
+      <p class="modal-size__title">
+        Size
+      </p>
+      <ul class="modal-size__list">
+        <li class="modal-size__item modal-item--active">
+          <div class="modal-item__icon">
+            <img src="./assets/img/size-s.png" alt="">
+          </div>
+          <p class="modal-item__value">{{data?.sizes.s.size}}</p>
+        </li>
+        <li class="modal-size__item">
+          <div class="modal-item__icon">
+            <img src="./assets/img/size-m.png" alt="">
+          </div>
+          <p class="modal-item__value">{{data?.sizes.m.size}}</p>
+        </li>
+        <li class="modal-size__item">
+          <div class="modal-item__icon">
+            <img src="./assets/img/size-l.png" alt="">
+          </div>
+          <p class="modal-item__value">{{data?.sizes.l.size}}</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal-additives">
+      <p class="modal-additives__title">
+        Additives
+      </p>
+      <ul class="modal-additives__list">
+        <li class="modal-additives__item">
+          <div class="modal-item__icon">1</div>
+          <p class="modal-item__value">{{data?.additives[1].name}}</p>
+        </li>
+        <li class="modal-additives__item">
+          <div class="modal-item__icon">2</div>
+          <p class="modal-item__value">{{data?.additives[2].name}}</p>
+        </li>
+        <li class="modal-additives__item">
+          <div class="modal-item__icon">3</div>
+          <p class="modal-item__value">{{data?.additives[3].name}}</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal-total">
+      <p class="modal-total-text">Total:</p>
+      <p class="modal-total__price">4.50</p>
+    </div>
+
+    <div class="modal-info">
+      <img class="modal-info__icon" src="./assets/img/info-icon.svg" alt="">
+      <p class="modal-info__text">
+        The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points
+        and enjoy your favorite coffee with up to 20% discount.
+      </p>
+    </div>
+
+    <button class="modal-btn" (click)="click()">Close</button>
+  </div>
+</div>
+<div class="overlay"></div>

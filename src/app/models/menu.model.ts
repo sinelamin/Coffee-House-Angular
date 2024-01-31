@@ -19,7 +19,11 @@ export interface Menu {
     m: Size;
     l: Size;
   };
-  additives: Additive[];
+  additives: {
+    1: Additive;
+    2: Additive;
+    3: Additive;
+  };
 }
 
 export type MuneType = Menu[];

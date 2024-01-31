@@ -1,4 +1,4 @@
-<section class="menu">
+<section #menu class="menu">
   <div class="container">
     <h2 class="menu-title">
       Behind each of our cups hides an
@@ -35,8 +35,12 @@
 
     <div class="menu-cards">
       @for (item of getDataOfCards(categories); track item) {
-        <app-menu-cards [cardValue]="item"></app-menu-cards>
+        <app-menu-cards [cardValue]="item" (modalShow)="openModal()" (dataCards)="handleDataCards($event)"></app-menu-cards>
         }
     </div>
   </div>
+  
+  @if (modalActive) {
+    <app-modal (modalHide)="closeModal()" [dataCards]="dataCardForModal"></app-modal>
+  }
 </section>

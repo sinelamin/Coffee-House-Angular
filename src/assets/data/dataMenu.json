@@ -20,20 +20,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-2.jpg",
@@ -55,20 +55,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-3.jpg",
@@ -90,20 +90,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-4.jpg",
@@ -125,20 +125,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-5.jpg",
@@ -160,20 +160,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-6.jpg",
@@ -195,20 +195,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-7.jpg",
@@ -230,20 +230,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/coffee-8.jpg",
@@ -265,20 +265,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Cinnamon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     }
   ],
   "tea": [
@@ -302,20 +302,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Lemon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/tea-2.jpg",
@@ -337,20 +337,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Lemon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/tea-3.jpg",
@@ -372,20 +372,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Lemon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/tea-4.jpg",
@@ -407,20 +407,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Sugar",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Lemon",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Syrup",
           "add-price": "0.50"
         }
-      ]
+      }
     }
   ],
   "dessert": [
@@ -444,20 +444,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-2.jpg",
@@ -479,20 +479,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-3.jpg",
@@ -514,20 +514,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-4.jpg",
@@ -549,20 +549,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-5.jpg",
@@ -584,20 +584,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-6.jpg",
@@ -619,20 +619,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-7.jpg",
@@ -654,20 +654,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     },
     {
       "img": "./assets/img/dessert-8.jpg",
@@ -689,20 +689,20 @@
           "add-price": "1.00"
         }
       },
-      "additives": [
-        {
+      "additives": {
+        "1": {
           "name": "Berries",
           "add-price": "0.50"
         },
-        {
+        "2": {
           "name": "Nuts",
           "add-price": "0.50"
         },
-        {
+        "3": {
           "name": "Jam",
           "add-price": "0.50"
         }
-      ]
+      }
     }
   ]
 }

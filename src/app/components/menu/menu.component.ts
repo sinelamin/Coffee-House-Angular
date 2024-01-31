@@ -26,7 +26,7 @@ export class MenuComponent implements AfterViewInit {
 
   categories = 'coffee';
   arrCategoriesList: ElementRef[] = [];
-  arrCardsList: ElementRef[] = [];
+  // arrCardsList: ElementRef[] = [];
   modalActive = false;
   dataCardForModal: any;
 
@@ -36,9 +36,9 @@ export class MenuComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.arrCategoriesList = this.categoriesList.toArray();
-    this.arrCardsList = this.cardsList.toArray();
+    // this.arrCardsList = this.cardsList.toArray();
 
-    console.log('arrCardsList', this.cardsList.toArray());
+    // console.log('arrCardsList', this.cardsList.toArray());
   }
 
   getCategories(event: MouseEvent) {

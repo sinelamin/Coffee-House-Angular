@@ -11,19 +11,19 @@
         Size
       </p>
       <ul class="modal-size__list">
-        <li class="modal-size__item modal-item--active">
+        <li #modal_item #size (click)="changSizeActive($event)" class="modal-size__item modal-item--active">
           <div class="modal-item__icon">
             <img src="./assets/img/size-s.png" alt="">
           </div>
           <p class="modal-item__value">{{dataCards?.sizes.s.size}}</p>
         </li>
-        <li class="modal-size__item">
+        <li #modal_item #size (click)="changSizeActive($event)" class="modal-size__item">
           <div class="modal-item__icon">
             <img src="./assets/img/size-m.png" alt="">
           </div>
           <p class="modal-item__value">{{dataCards?.sizes.m.size}}</p>
         </li>
-        <li class="modal-size__item">
+        <li #modal_item #size (click)="changSizeActive($event)" class="modal-size__item">
           <div class="modal-item__icon">
             <img src="./assets/img/size-l.png" alt="">
           </div>
@@ -37,15 +37,15 @@
         Additives
       </p>
       <ul class="modal-additives__list">
-        <li class="modal-additives__item">
+        <li #additives (click)="changAdditivesActive($event)" class="modal-additives__item">
           <div class="modal-item__icon">1</div>
           <p class="modal-item__value">{{dataCards?.additives[1].name}}</p>
         </li>
-        <li class="modal-additives__item">
+        <li #additives (click)="changAdditivesActive($event)" class="modal-additives__item">
           <div class="modal-item__icon">2</div>
           <p class="modal-item__value">{{dataCards?.additives[2].name}}</p>
         </li>
-        <li class="modal-additives__item">
+        <li #additives (click)="changAdditivesActive($event)" class="modal-additives__item">
           <div class="modal-item__icon">3</div>
           <p class="modal-item__value">{{dataCards?.additives[3].name}}</p>
         </li>
@@ -54,7 +54,7 @@
 
     <div class="modal-total">
       <p class="modal-total-text">Total:</p>
-      <p class="modal-total__price">4.50</p>
+      <p class="modal-total__price">{{getTotalPrice()}}</p>
     </div>
 
     <div class="modal-info">

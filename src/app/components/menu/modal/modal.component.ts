@@ -41,39 +41,39 @@ export class ModalComponent implements AfterViewInit {
 
   changAdditivesActive(event: MouseEvent): void {
     const currentTarget = event.currentTarget as HTMLElement;
-
-    this.arrAdditiveList.forEach((item) => {
-      item.nativeElement.classList.remove('modal-item--active');
-    })
-
-    currentTarget.classList.add('modal-item--active');
+    
+    if (currentTarget.classList.contains('modal-item--active')) {
+      currentTarget.classList.remove('modal-item--active');
+    } else {
+      currentTarget.classList.add('modal-item--active');
+    }
   }
 
   getTotalPrice(): string {
-    const totalPrice = +this.dataCards?.price + +this.addSizePrice() + +this.addAdditivesPrice();
+    const totalPrice = +this.dataCards?.price + this.addSizePrice() + this.addAdditivesPrice();
 
     return `${totalPrice.toFixed(2)}`;
   }
 
-  addSizePrice(): string {
-    let totalSizePrice: string = '';
-    const sizeLiteral: string [] = ['s', 'm', 'l'];
+  addSizePrice(): number {
+    let totalSizePrice: number = 0;
+    const sizeLiteral: string[] = ['s', 'm', 'l'];
 
     this.arrSizeList.forEach((item, index) => {
       if (item.nativeElement.classList.contains('modal-item--active')) {
-        totalSizePrice = this.dataCards?.sizes[`${sizeLiteral[index]}`]['add-price'];
+        totalSizePrice = +this.dataCards?.sizes[`${sizeLiteral[index]}`]['add-price'];
       }
     })
 
     return totalSizePrice;
   }
 
-  addAdditivesPrice(): string {
-    let totalAdditivesPrice: string = '';
+  addAdditivesPrice(): number {
+    let totalAdditivesPrice: number = 0;
 
     this.arrAdditiveList.forEach((item, index) => {
       if (item.nativeElement.classList.contains('modal-item--active')) {
-        totalAdditivesPrice = this.dataCards?.additives[index + 1]['add-price'];
+        totalAdditivesPrice += +(this.dataCards?.additives[index + 1]['add-price']);
       }
     })
 

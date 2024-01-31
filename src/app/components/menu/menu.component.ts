@@ -22,12 +22,13 @@ export class MenuComponent implements AfterViewInit {
 
   @ViewChildren('menu_card') cardsList!: QueryList<ElementRef>;
 
-  @ViewChild('menu') munuSection!: ElementRef;
+  @ViewChild('menu') menuSection!: ElementRef;
 
   categories = 'coffee';
   arrCategoriesList: ElementRef[] = [];
   arrCardsList: ElementRef[] = [];
-  modalShow = false;
+  modalActive = false;
+  dataCardForModal: any;
 
   dataMenuCoffee: MuneType = dataMenu.coffee;
   dataMenuTea: MuneType = dataMenu.tea;
@@ -93,15 +94,16 @@ export class MenuComponent implements AfterViewInit {
     }
   }
 
-  dataForChildB: any;
-
-  onClick() {
-    this.modalShow = !this.modalShow;
+  openModal() {
+    this.modalActive = !this.modalActive;
   }
 
-  handleDataChanged(data: any) {
-    this.dataForChildB = data;
-    // Теперь dataForChildB будет передан дочернему компоненту B
+  closeModal() {
+    this.modalActive = !this.modalActive;
+  }
+
+  handleDataCards(data: any) {
+    this.dataCardForModal = data;
   }
 
 }

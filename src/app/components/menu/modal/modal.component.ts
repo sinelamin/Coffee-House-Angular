@@ -8,11 +8,11 @@ import { Component, EventEmitter, Output, Input } from '@angular/core';
   styleUrl: './modal.component.scss'
 })
 export class ModalComponent {
-  @Output() onClick = new EventEmitter<any>();
+  @Output() modalHide = new EventEmitter<any>();
 
-  @Input() data: any;
+  @Input() dataCards: any;
 
-  click() {
-    this.onClick.emit();
+  clickToClose() {
+    this.modalHide.emit();
   }
 }

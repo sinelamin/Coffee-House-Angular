@@ -1,9 +1,10 @@
 <div class="modal">
-  <img class="modal-img" [src]="data?.img" alt="image">
+  <img class="modal-img" [src]="dataCards?.img" alt="image">
   <div class="modal-content">
-    <h3 class="modal-title">{{data?.name}}</h3>
+    <h3 class="modal-title">{{dataCards?.name}}</h3>
     <p class="modal-description">
-      {{data?.description}}
+      {{dataCards?.description}}
+      
     </p>
     <div class="modal-size">
       <p class="modal-size__title">
@@ -14,19 +15,19 @@
           <div class="modal-item__icon">
             <img src="./assets/img/size-s.png" alt="">
           </div>
-          <p class="modal-item__value">{{data?.sizes.s.size}}</p>
+          <p class="modal-item__value">{{dataCards?.sizes.s.size}}</p>
         </li>
         <li class="modal-size__item">
           <div class="modal-item__icon">
             <img src="./assets/img/size-m.png" alt="">
           </div>
-          <p class="modal-item__value">{{data?.sizes.m.size}}</p>
+          <p class="modal-item__value">{{dataCards?.sizes.m.size}}</p>
         </li>
         <li class="modal-size__item">
           <div class="modal-item__icon">
             <img src="./assets/img/size-l.png" alt="">
           </div>
-          <p class="modal-item__value">{{data?.sizes.l.size}}</p>
+          <p class="modal-item__value">{{dataCards?.sizes.l.size}}</p>
         </li>
       </ul>
     </div>
@@ -38,15 +39,15 @@
       <ul class="modal-additives__list">
         <li class="modal-additives__item">
           <div class="modal-item__icon">1</div>
-          <p class="modal-item__value">{{data?.additives[1].name}}</p>
+          <p class="modal-item__value">{{dataCards?.additives[1].name}}</p>
         </li>
         <li class="modal-additives__item">
           <div class="modal-item__icon">2</div>
-          <p class="modal-item__value">{{data?.additives[2].name}}</p>
+          <p class="modal-item__value">{{dataCards?.additives[2].name}}</p>
         </li>
         <li class="modal-additives__item">
           <div class="modal-item__icon">3</div>
-          <p class="modal-item__value">{{data?.additives[3].name}}</p>
+          <p class="modal-item__value">{{dataCards?.additives[3].name}}</p>
         </li>
       </ul>
     </div>
@@ -64,7 +65,7 @@
       </p>
     </div>
 
-    <button class="modal-btn" (click)="click()">Close</button>
+    <button class="modal-btn" (click)="clickToClose()">Close</button>
   </div>
 </div>
 <div class="overlay"></div>

@@ -23,21 +23,20 @@ export class CoffeeCardsComponent implements AfterViewInit {
     // console.log('arrCardsList', this.arrCardsList[0].nativeElement);
   }
 
-  @Output() onClick = new EventEmitter<any>();
+  @Output() modalShow = new EventEmitter<any>();
 
-  click() {
-    this.onClick.emit();
+  openCard() {
+    this.modalShow.emit();
   }
 
-  clickCard() {
-    // console.log(this.arrCardsList[0].nativeElement);
-    // console.log(this.cardValue);
-  }
+  // clickCard() {
+  //   // console.log(this.arrCardsList[0].nativeElement);
+  //   // console.log(this.cardValue);
+  // }
 
-  @Output() dataChanged: EventEmitter<any> = new EventEmitter();
+  @Output() dataCards: EventEmitter<any> = new EventEmitter();
 
-  someMethod() {
-    // Вызовите это, когда данные изменятся и их нужно отправить родителю
-    this.dataChanged.emit(this.cardValue);
+  giveDataCardsToParents() {
+    this.dataCards.emit(this.cardValue);
   }
 }

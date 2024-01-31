@@ -35,11 +35,12 @@
 
     <div class="menu-cards">
       @for (item of getDataOfCards(categories); track item) {
-        <app-menu-cards [cardValue]="item" (onClick)="onClick()" (dataChanged)="handleDataChanged($event)"></app-menu-cards>
+        <app-menu-cards [cardValue]="item" (modalShow)="openModal()" (dataCards)="handleDataCards($event)"></app-menu-cards>
         }
     </div>
   </div>
-  @if (modalShow) {
-    <app-modal (onClick)="onClick()" [data]="dataForChildB"></app-modal>
+  
+  @if (modalActive) {
+    <app-modal (modalHide)="closeModal()" [dataCards]="dataCardForModal"></app-modal>
   }
 </section>

@@ -1,4 +1,13 @@
-import { Component, EventEmitter, Output, Input, AfterViewInit, ViewChildren, ElementRef, QueryList } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Output,
+  Input,
+  AfterViewInit,
+  ViewChildren,
+  ElementRef,
+  QueryList
+} from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -41,7 +50,7 @@ export class ModalComponent implements AfterViewInit {
 
   changAdditivesActive(event: MouseEvent): void {
     const currentTarget = event.currentTarget as HTMLElement;
-    
+
     if (currentTarget.classList.contains('modal-item--active')) {
       currentTarget.classList.remove('modal-item--active');
     } else {
@@ -50,7 +59,8 @@ export class ModalComponent implements AfterViewInit {
   }
 
   getTotalPrice(): string {
-    const totalPrice = +this.dataCards?.price + this.addSizePrice() + this.addAdditivesPrice();
+    const totalPrice = +this.dataCards?.
+      price + this.addSizePrice() + this.addAdditivesPrice();
 
     return `${totalPrice.toFixed(2)}`;
   }
@@ -61,7 +71,8 @@ export class ModalComponent implements AfterViewInit {
 
     this.arrSizeList.forEach((item, index) => {
       if (item.nativeElement.classList.contains('modal-item--active')) {
-        totalSizePrice = +this.dataCards?.sizes[`${sizeLiteral[index]}`]['add-price'];
+        totalSizePrice = +this.dataCards?.
+          sizes[`${sizeLiteral[index]}`]['add-price'];
       }
     })
 
@@ -73,7 +84,8 @@ export class ModalComponent implements AfterViewInit {
 
     this.arrAdditiveList.forEach((item, index) => {
       if (item.nativeElement.classList.contains('modal-item--active')) {
-        totalAdditivesPrice += +(this.dataCards?.additives[index + 1]['add-price']);
+        totalAdditivesPrice += +(this.dataCards?.
+          additives[index + 1]['add-price']);
       }
     })
 

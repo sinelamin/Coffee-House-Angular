@@ -1,4 +1,13 @@
-import { Component, EventEmitter, Input, Output, AfterViewInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  AfterViewInit,
+  ViewChildren,
+  QueryList,
+  ElementRef
+} from '@angular/core';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
@@ -19,8 +28,6 @@ export class CoffeeCardsComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.arrCardsList = this.cardsList.toArray();
-
-    // console.log('arrCardsList', this.arrCardsList[0].nativeElement);
   }
 
   @Output() modalShow = new EventEmitter<any>();
@@ -28,11 +35,6 @@ export class CoffeeCardsComponent implements AfterViewInit {
   openCard() {
     this.modalShow.emit();
   }
-
-  // clickCard() {
-  //   // console.log(this.arrCardsList[0].nativeElement);
-  //   // console.log(this.cardValue);
-  // }
 
   @Output() dataCards: EventEmitter<any> = new EventEmitter();
 

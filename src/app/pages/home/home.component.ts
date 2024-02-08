@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 import { OfferComponent } from '../../components/offer/offer.component';
 import { FavoriteComponent } from '../../components/favorite/favorite.component';
@@ -15,8 +15,7 @@ import { ApplicationComponent } from '../../components/application/application.c
     ApplicationComponent,
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-
 }

@@ -10,6 +10,7 @@
   }
   
   .application-download {
+    // display: inline-block;
     max-width: 630px;
   }
   
@@ -69,5 +70,16 @@
   
   .application-photo {
     max-width: 50%;
+  }
+
+
+  @media (max-width: 1100px) {
+    .application-wrapper {
+      flex-direction: column;
+    }
+
+    .application-photo {
+      max-width: 60%;
+    }
   }
 }

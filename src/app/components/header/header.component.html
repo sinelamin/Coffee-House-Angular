@@ -1,10 +1,10 @@
-<header class="header">
+<header #headerElement class="header">
   <div class="container">
     <div class="header-top">
-      <a class="logo-link" routerLink="">
+      <a (click)="navigateClick()" class="logo-link" routerLink="">
         <img class="logo-img" src="./assets/img/coffee-house-logo.png" alt="Coffe House">
       </a>
-      <nav class="navigation">
+      <nav [ngClass]="{'navigation--active': burgerActiveState}" (click)="navigateClick()" class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list__item">
             <a class="navigation-item__link" href="#favorite">Favorite coffee</a>
@@ -19,11 +19,15 @@
             <a class="navigation-item__link" (click)="scrollToFooter()">Contact us</a>
           </li>
         </ul>
+        <a class="menu-link" (click)="scrollToTop()" routerLink="/menu">
+          Menu
+          <img class="menu-link__icon" src="./assets/img/menu-link-icon.svg" alt="menu icon">
+        </a>
       </nav>
-      <a class="menu-link" routerLink="/menu">
-        Menu
-        <img class="menu-link__icon" src="./assets/img/menu-link-icon.svg" alt="menu icon">
-      </a>
+      <div (click)="burgerActive()" class="header-burger">
+        <span [ngClass]="{'burger-line__top--active': burgerActiveState}" class="header-burger__line burger-line__top"></span>
+        <span [ngClass]="{'burger-line__bottom--active': burgerActiveState}" class="header-burger__line burger-line__bottom"></span>
+      </div>
     </div>
   </div>
 </header>

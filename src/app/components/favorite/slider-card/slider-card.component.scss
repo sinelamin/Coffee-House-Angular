@@ -4,10 +4,10 @@
   margin: 0 auto;
   width: 480px;
   color: $textDark;
-  // border: 1px solid #000;
 
   .slider-item__img {
     margin-bottom: 20px;
+    width: 100%;
   }
   
   .slider-item__name {
@@ -33,5 +33,11 @@
 
   .slider-item__price::before {
     content: '$';
+  }
+}
+
+@media (max-width: 630px) {
+  .slider-item {
+    width: 348px;
   }
 }

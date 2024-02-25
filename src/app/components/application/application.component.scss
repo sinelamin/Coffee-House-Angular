@@ -2,17 +2,17 @@
 
 .application {
   margin-bottom: 100px;
-  
+
   .application-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .application-download {
     max-width: 630px;
   }
-  
+
   .application-title {
     margin: 0 0 40px;
     font-size: 60px;
@@ -20,54 +20,116 @@
     line-height: 125%;
     color: $textDark;
   }
-  
+
   .application-title__accent {
     font-style: italic;
     color: $textAccent;
   }
-  
+
   .application-descr {
     margin: 0 0 40px;
     font-size: 16px;
     line-height: 150%;
     color: $textDark;
   }
-  
+
   .application-links {
     display: flex;
   }
-  
+
   .application-link {
     margin-right: 20px;
     padding: 0 20px;
     border-radius: 100px;
     border: 1px solid $borderDark;
+    transition: background-color .5s, color .5s;
   }
-  
+
+  .app-store {
+    background-image: $appStore;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 35px;
+    transition: background-image .5s;
+  }
+
+  .google-play {
+    background-image: $googlePlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 35px;
+    transition: background-image .5s;
+  }
+
+  .application-link:hover {
+    background-color: $bgContainer;
+    color: $textLight;
+  }
+
+  .application-link:hover .app-store {
+    background-image: $appStoreActive;
+  }
+
+  .application-link:hover .google-play {
+    background-image: $googlePlayActive;
+  }
+
   .link-content {
     display: flex;
     align-items: center;
     width: 180px;
   }
-  
+
   .application-link__img {
     margin-right: 8px;
   }
-  
+
   .application-link__name {
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
   }
-  
+
   .application-link__subname {
     display: block;
     font-size: 10px;
     font-weight: 600;
     line-height: 140%;
   }
-  
+
   .application-photo {
     max-width: 50%;
+  }
+
+
+  @media (max-width: 1100px) {
+    .application-wrapper {
+      flex-direction: column;
+    }
+
+    .application-photo {
+      max-width: 60%;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .application-title {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .application-links {
+      flex-direction: column;
+    }
+
+    .application-link {
+      width: 200px;
+      margin-bottom: 20px;
+    }
   }
 }

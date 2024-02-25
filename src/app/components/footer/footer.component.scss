@@ -57,4 +57,32 @@
   .contact-item__address {
     display: inline;
   }
+
+
+  @media (max-width: 950px) {
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: baseline;
+      padding: 100px 60px;
+      height: auto;
+    }
+
+    .footer-content {
+      max-width: 568px;
+      margin-right: 0;
+      margin-bottom: 100px;
+    }
+
+    .footer-content__title {
+      margin: 0 0 40px;
+      font-size: 60px;
+      line-height: 125%;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .footer-content__title {
+      font-size: 32px;
+    }
+  }
 }

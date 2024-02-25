@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { SliderListComponent } from '../slider-list/slider-list.component';
 import dataSlider from '../../../../assets/data/dataSlider.json';
 
@@ -12,17 +12,29 @@ import dataSlider from '../../../../assets/data/dataSlider.json';
   styleUrl: './slider.component.scss'
 })
 
-export class SliderComponent implements OnInit, AfterViewInit {
+export class SliderComponent implements AfterViewInit {
+
+  @ViewChild('sliderWrapper') sliderWrapper!: ElementRef;
+
+  @ViewChildren('progress') progressBars!: QueryList<ElementRef>;
 
   startPoint = 0;
   numberOfCards = dataSlider.coffee.length;
   position = this.startPoint;
-  offset = 480;
-  maxRightPosition = this.offset * (this.numberOfCards - 1);
+  offset: number = 0;
+  maxRightPosition: number = 0;
 
   progress = 0;
   index = 0;
   arrProgressBars: ElementRef[] = [];
+
+  ngAfterViewInit() {
+    this.arrProgressBars = this.progressBars.toArray();
+    this.offset = this.sliderWrapper.nativeElement.clientWidth;
+    this.maxRightPosition = this.offset * (this.numberOfCards - 1);
+    this.growthOfProgress();
+  }
+
 
   moveRight() {
     this.progress = 0;
@@ -56,14 +68,6 @@ export class SliderComponent implements OnInit, AfterViewInit {
     return this.position;
   }
 
-
-  @ViewChildren('progress') progressBars!: QueryList<ElementRef>;
-
-  ngAfterViewInit() {
-    this.arrProgressBars = this.progressBars.toArray();
-    this.growthOfProgress();
-  }
-
   getProgressBarWidth() {
     this.arrProgressBars[this.index].nativeElement.style.width = `${this.progress}%`;
   }
@@ -85,9 +89,5 @@ export class SliderComponent implements OnInit, AfterViewInit {
     if (this.index > this.numberOfCards - 1) {
       this.index = 0;
     }
-  }
-
-  ngOnInit(): void {
-    // this.growthOfProgress();
   }
 }

@@ -72,5 +72,17 @@
       margin-right: 0;
       margin-bottom: 100px;
     }
+
+    .footer-content__title {
+      margin: 0 0 40px;
+      font-size: 60px;
+      line-height: 125%;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .footer-content__title {
+      font-size: 32px;
+    }
   }
 }

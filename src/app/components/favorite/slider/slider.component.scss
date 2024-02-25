@@ -15,7 +15,15 @@
     position: absolute;
     transform: translateY(-30px);
     top: 50%;
+    // border: 1px solid $bgContainer;
+    // border-radius: 50%;
+    // transition: background-color .5s, color .5s;
   }
+
+  // .slider-btn:hover {
+  //   background-color: $bgContainer;
+  //   color: $textLight;
+  // }
 
   .arrow-left {
     left: 0;
@@ -48,5 +56,17 @@
     height: 100%;
     border-radius: 100px;
     background-color: $borderDark;
+  }
+
+  @media (max-width: 630px) {
+    .slider-wrapper {
+      width: 348px;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .slider-btn {
+      display: none;
+    }
   }
 }

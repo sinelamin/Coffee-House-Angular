@@ -16,4 +16,10 @@
   .favorite-title__accent {
     color: $textAccent;
   }
+
+  @media (max-width: 630px) {
+    .favorite-title {
+      font-size: 32px;
+    }
+  }
 }

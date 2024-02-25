@@ -79,4 +79,20 @@
     gap: 40px 0;
     text-align: left;
   }
+
+  @media (max-width: 1015px) {
+    .menu-title {
+      max-width: 688px; 
+    }
+
+    .menu-cards {
+      justify-content: space-around;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .menu-title {
+      font-size: 32px; 
+    }
+  }
 }

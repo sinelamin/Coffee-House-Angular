@@ -55,4 +55,10 @@
       display: none;
     }
   }
+
+  @media (max-width: 630px) {
+    .about-title {
+      font-size: 32px;
+    }
+  }
 }

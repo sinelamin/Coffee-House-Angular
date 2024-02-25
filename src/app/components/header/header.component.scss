@@ -41,13 +41,23 @@
   }
 
   .navigation-item__link {
+    transition: border-bottom .3s;
     cursor: pointer;
+  }
+
+  .navigation-item__link:hover {
+    border-bottom: 2px solid $textDark;
   }
 
   .menu-link {
     font-size: 16px;
     font-weight: 600;
     color: $textDark;
+    transition: border-bottom .3s;
+  }
+
+  .menu-link:hover {
+    border-bottom: 2px solid $textDark;
   }
 
   .header-burger {

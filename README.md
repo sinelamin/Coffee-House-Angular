@@ -2,26 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
-## Development server
+# Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project was implemented to practice the basic skills of working with Angular 17:
 
-## Code scaffolding
+- Writing components
+- Syntax: data binding, conditions, loops, events
+- Interaction between components
+- Working with Directives
+- Working with lifecycle hooks
+- Routing
+- As a database simulation, JSON was used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The coffee shop template [Coffee-House](https://www.figma.com/design/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?node-id=0-1&t=Kzl0IWoogsPPPrqM-0) was used as a sample.
 
-## Build
+`The PixelPerfect principle was not followed as it was not a goal in this SPA.`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Main page
+![image](https://github.com/user-attachments/assets/a43d1d9d-445b-4b9d-82e7-fb0a46149820)
+![image](https://github.com/user-attachments/assets/1d7de475-0bd7-4a7f-8f1a-b98819d6482a)
 
-## Running unit tests
+## Menu page
+![image](https://github.com/user-attachments/assets/cd7f210c-cb3c-4282-a7c8-058662582a1d)
+![image](https://github.com/user-attachments/assets/154c2361-6e1d-4375-9546-c032e5d878ec)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -12,7 +12,7 @@ This project was implemented to practice the basic skills of working with Angula
 - Working with Directives
 - Working with lifecycle hooks
 - Routing
-- As a database simulation, JSON was used
+- As a database simulation, local JSON was used
 
 The coffee shop template [Coffee-House](https://www.figma.com/design/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?node-id=0-1&t=Kzl0IWoogsPPPrqM-0) was used as a sample.
 
